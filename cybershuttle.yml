@@ -1,0 +1,33 @@
+project:
+  name: "NAMD Workshop Example"
+  description: "NAMD 2025 Workshop A"
+  homepage: https://github.com/cyber-shuttle/namd-workshop-2025a
+  authors:
+    - isralewi@illinois.edu
+    - deb0054@auburn.edu
+    - pjaya001@odu.edu
+  tags:
+    - cybershuttle
+    - md
+    - namd
+    - illinois
+    - uiuc
+    - molecular-dynamics
+
+workspace:
+  resources:
+    min_cpu: 4
+    min_gpu: 0
+    min_mem: 4096
+    gpu_mem: 0
+  model_collection: []
+  data_collection: []
+
+additional_dependencies:
+  modules: []
+  conda:
+    - python=3.10
+    - pip
+  pip:
+    - numpy
+    - pandas
