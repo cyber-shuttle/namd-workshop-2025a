@@ -1,5 +1,6 @@
 # Load the HIV-1 Protease
-mol new 1bve waitfor all
+mol new 1_structure.psf waitfor all
+mol addfile 1_system.1.4.dcd waitfor all
 
 # Zoom by 2x
 scale by 2.0
@@ -12,18 +13,6 @@ mol modstyle 0 0 NewCartoon 0.300000 10.000000 4.100000 0
 
 # Color by Secondary Structure
 mol modcolor 0 0 Structure
-
-# Add a new representation
-mol addrep 0
-
-# Select DMP (the ligand), to be represented
-mol modselect 1 0 resname DMP
-
-# Represent as Licorice
-mol modstyle 1 0 Licorice 0.300000 12.000000 12.000000 0 0
-
-# Color by name
-mol modcolor 1 0 Name
 
 # Render a figure "image.png"
 ## Enable shadowns and ambient occlusion
